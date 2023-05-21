@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 Person</h1>
+<p><a href="/people"> List of people </a></p>
+<p>
+    <strong th:text="'Name:'"</strong>
+    <span th:text="${person.firstName}"></span>
+</p>
+<p>
+    <strong th:text="${person.familyName}"></strong>
+    <span th:text="${person.familyName}"></span>
+</p>
+
+</body>
+</html>

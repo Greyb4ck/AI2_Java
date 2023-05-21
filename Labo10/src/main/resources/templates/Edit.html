@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Edit</h1>
+<p><a href="/people">List of people</a></p>
+
+<form action="save" th:object="${person}" method="post">
+  <input type="text" th:field="*{firstName}" placeholder="Name">
+  <br>
+  <input type="text" th:field="*{familyName}" placeholder="Surname">
+  <br>
+  <button>Save</button>
+</form>
+</body>
+</html>
